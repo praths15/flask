@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Percephone</title>
+      {% else %}
+      <title>Welcome to Percephone UI</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Percephone: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

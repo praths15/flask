@@ -1,0 +1,113 @@
+
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="card">
+  <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo" />
+  <h1 class="site-title">{{ title }}</h1>
+</div>
+
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<table>
+<h1>
+  <caption>Active Campaigns</caption>
+ </h1>
+  <tr>
+    <th>Campaign ID</th>
+  </tr>
+  <tr>
+    <td>413254</td>
+  </tr>
+  <tr>
+    <td>413260</td>
+  </tr>
+  <tr>
+    <td>413243</td>
+  </tr>
+  <tr>
+    <td>413354</td>
+  </tr>
+  <tr>
+    <td>4134554</td>
+  </tr>
+   <tr>
+    <td>4132532</td>
+  </tr>
+</table>
+
+<table>
+<h1>
+  <caption>Associated Devices</caption>
+  </h1>
+  <tr>
+    <th>DeviceId</th>
+    <th>CollectorID</th>
+    <th>Upload TimeStamp</th>
+    <th>GeoLocation</th>
+    <th>OEM</th>
+  </tr>
+  <tr>
+    <td>413254</td>
+    <td>12324345325</td>
+    <td>2021-01-19 05:14:07</td>
+    <td>North America</td>
+    <td>Asus</td>
+  </tr>
+  <tr>
+    <td>413260</td>
+    <td>1232433545</td>
+    <td>2021-02-19 05:14:07</td>
+    <td>North America</td>
+    <td>Google</td>
+  </tr>
+  <tr>
+    <td>413243</td>
+    <td>12324434325</td>
+    <td>2021-01-21 05:14:07</td>
+    <td>Asia</td>
+    <td>Asus</td>
+  </tr>
+  <tr>
+    <td>413354</td>
+    <td>123243343325</td>
+    <td>2021-01-19 05:14:07</td>
+    <td>North America</td>
+    <td>Samsung</td>
+  </tr>
+  <tr>
+    <td>4134554</td>
+    <td>123243435325</td>
+    <td>2021-01-19 05:14:07</td>
+    <td>North America</td>
+    <td>Google</td>
+  </tr>
+   <tr>
+    <td>4132532</td>
+    <td>12324435325</td>
+    <td>2021-01-19 05:14:07</td>
+    <td>North America</td>
+    <td>Google</td>
+  </tr>
+</table>
+
+</body>
+{% endblock %}

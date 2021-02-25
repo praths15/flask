@@ -1,0 +1,17 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+<div class="card">
+  <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo" />
+  <h1 class="site-title">{{ title }}</h1>
+  <p class="subtitle">Percephone Admin UI Prototype using Flask and Dash embedded</p>
+   <a href="/main" class="dash-link">
+    <span>View Data</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+  <a href="/dashapp/" class="dash-link">
+    <span>View OEM Dashboard</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+{% endblock %}
